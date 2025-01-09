@@ -20,7 +20,6 @@ from testapi import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'map/',views.MapView.as_view(), name='map-list'),
     path(r'users/', views.UserListView.as_view(), name='user-list'),
     path(r'users/<int:pk>/', views.UserDetailAPIView.as_view(), name='user-detail'),
 ]
